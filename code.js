@@ -3,7 +3,7 @@
 // Reverse Insertion Sort 
 
 function insertionSortReverse(array) {
-    for (var i = array.length - 2; i >= 0; i++) {
+    for (var i = array.length - 2; i >= 0; i--) {
         var val = array[i];
         var j;
 
