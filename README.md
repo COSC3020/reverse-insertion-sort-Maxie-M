@@ -36,3 +36,21 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+# Runtime Analysis, Maxie M. 
+## Average-Case Time Complexity 
+- The **Average** comparisons per element:
+- **Total Comparisons for $n$ elements:** $T(n) = \frac{1}{2}(1 + 2 + 3 + \dots + (n - 1)) = \frac{n^2 - n}{4}$
+- **Asymptotic Complexity:**
+  - Will be dominated by $n^2$, and will ignore constants and lower-order terms
+  - **Average-Case Complexity:** $\Theta(n^2)$
+## Resoning 
+- **insertion sort**
+  - Each element is compared with and shifted past elements that are greater than itself in sorted portion of array 
+- Element will traverse **half** of the sorted portion of the array which will take place before finding the correct position, on average
+- i-th element:
+  - number of comparisons is approximately $\frac{i}{2}$ in the average case
+## Plagiarism Statement: 
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+## Resources:
+- https://www.javaguides.net/2023/09/insertion-sort-in-descending-order-in.html#google_vignette
